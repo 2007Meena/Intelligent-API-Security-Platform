@@ -1,0 +1,148 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #0d1527;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+
+.brand-icon {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-link {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-cols-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.stat-card {
+  background: #131c2e;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.stat-val {
+  font-size: 26px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.state-node {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #3b82f6;
+  background: #0f172a;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.state-node.active-state {
+  border-color: #10b981;
+  background: #064e3b;
+  box-shadow: 0 0 20px #10b98188;
+  transform: scale(1.08);
+}
+
+.state-node.trap-state {
+  border-color: #ef4444;
+  color: #f87171;
+}
+
+.state-node.final-state {
+  border: 3px double #10b981;
+}
+
+.state-flow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 24px 0;
+}
+
+.arrow-divider {
+  color: #64748b;
+  font-weight: 800;
+  font-size: 18px;
+}
