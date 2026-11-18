@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Intelligent API Security and Request Validation Platform
 
 A full-stack cybersecurity web application built for:
@@ -118,3 +119,6 @@ code "C:\Users\meena\Desktop\project1"
 | **FLAT** | **CO3** | Context-Free Grammars | Tab 3: Formal CFG $G = (V, \Sigma, R, S)$ and derivation of `{"id": 101, "role": "admin"}`. |
 | **FLAT** | **CO4** | Pushdown Automata | Tab 4: 7-tuple PDA definition, stack operations (Push/Pop), and balanced brace validation. |
 | **FLAT** | **CO5** | Turing Machines & Decidability | Tab 5: Role of Turing Machine and proof that API validation is strictly decidable in polynomial time $O(n)$. |
+=======
+# Intelligent-API-Security-Platform
+>>>>>>> f24301b23d3c3a72938894cd1afbae5466ff6664
